@@ -1,3 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2024 ETH Zurich and University of Bologna
+SPDX-License-Identifier: CC-BY-4.0
+
+Authors:
+- Philip Wiese <wiesep@iis.ee.ethz.ch>
+-->
+
 # Visual People Counting
 
 Demonstration of a visual based people counting system using the SENSEI platform.
@@ -116,8 +124,11 @@ pre-commit uninstall
 ```
 
 ## License
-All licenses used in this repository are listed under the `LICENSES` folder. Unless specified otherwise in the respective file headers, all code checked into this repository is made available under a permissive license.
-- Most software sources and tool scripts are licensed under the [Apache 2.0 license](https://opensource.org/licenses/Apache-2.0).
-- Markdown, JSON, text files, pictures, PDFs, are licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0) license (CC BY 4.0).
+All licenses used in this repository are listed under the `LICENSES` folder. Unless specified otherwise in the respective file headers or in `REUSE.toml`:
+- Software sources, tool scripts, build configurations and notebooks are licensed under the [Apache 2.0 license](https://opensource.org/licenses/Apache-2.0).
+- Documentation and figures are licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0) license (CC BY 4.0).
+- The YOLOv5 detector models (`*.tflite`, NNTool weight tensors `*.tensor`), trained with the Ultralytics YOLOv5 code, are licensed under the [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html).
+- The calibration images in `src_GAP/networks/YOLOv5/input_images_HeadCount/` are from the public Roboflow [dataset-human-head](https://universe.roboflow.com/object-detection/dataset-human-head) (CC BY 4.0).
+- The network input files `src_GAP/src/networks/YOLOv5/generated*/Input_1.bin` are third-party files under the [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0) license.
 
 To extract license information for all files, you can use the [reuse tool](https://reuse.software/) and by running `reuse spdx` in the root directory of this repository.

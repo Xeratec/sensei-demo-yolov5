@@ -1,3 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2024 ETH Zurich and University of Bologna
+SPDX-License-Identifier: CC-BY-4.0
+
+Authors:
+- Philip Wiese <wiesep@iis.ee.ethz.ch>
+-->
+
 # YOLOv5 on GAP9
 This project enables the deployment of YOLOv5 network on the GAP9 SoC.  The main thread is implemented in `main.c`.
 
